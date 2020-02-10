@@ -1,4 +1,5 @@
 {
+  "name":"unicodelabs-react-scripts",
   "private": true,
   "workspaces": [
     "packages/*"
