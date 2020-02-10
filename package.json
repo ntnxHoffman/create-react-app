@@ -1,5 +1,7 @@
 {
-  "name":"unicodelabs-react-scripts",
+  "name": "unicodelabs-react-scripts",
+  "version": "3.3.1",
+  "description": "custom Configuration and scripts for Create React App.",
   "private": true,
   "workspaces": [
     "packages/*"
