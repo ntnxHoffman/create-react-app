@@ -3,8 +3,19 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  const getEnvValues = () => {
+    if(!process.env.REACT_APP_EMPLOYEE_ID || !process.env.REACT_APP_POSITION_ID) {
+    throw new Error('Must define `REACT_APP_EMPLOYEE_ID  and `REACT_APP_POSITION_ID`')
+    }
+    const employeeID = process.env.REACT_APP_EMPLOYEE_ID;
+    const position = process.env.REACT_APP_POSITION_ID;
+
+    return {employeeID, position};
+  }
+
   return (
-    <div className="App">
+     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
